@@ -20,7 +20,7 @@ jobs:
 
 # ~~~~~~~~~~~~~~~~~~~ Building Container Image ~~~~~~~~~~~~~~~~~~~
         
-      - name: Building Docker Images
+      - name: jenny-awsbucket
         run: |
           docker image build -t $GITHUB_WORKFLOW:$GITHUB_RUN_ID . 
           docker image tag $GITHUB_WORKFLOW:$GITHUB_RUN_ID pradeepreddy2002/$GITHUB_WORKFLOW:$GITHUB_RUN_ID
